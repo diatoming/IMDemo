@@ -11,10 +11,10 @@
 		1F5BBAFB1B662E2B0019C20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBAFA1B662E2B0019C20A /* AppDelegate.swift */; };
 		1F5BBAFD1B662E2B0019C20A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBAFC1B662E2B0019C20A /* ViewController.swift */; };
 		1F5BBB001B662E2B0019C20A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBAFE1B662E2B0019C20A /* Main.storyboard */; };
-		1F5BBB021B662E2B0019C20A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBB011B662E2B0019C20A /* Images.xcassets */; };
 		1F5BBB051B662E2B0019C20A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBB031B662E2B0019C20A /* LaunchScreen.xib */; };
 		1F5BBB111B662E2B0019C20A /* IMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBB101B662E2B0019C20A /* IMDemoTests.swift */; };
 		1F5BBB1B1B66345F0019C20A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBB1A1B66345F0019C20A /* Podfile */; };
+		1FE18DD81B7138CA002DEB35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE18DD71B7138CA002DEB35 /* Images.xcassets */; };
 		1FED4F6F1B6B6A46003D0421 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED4F6E1B6B6A46003D0421 /* ConversationListViewController.swift */; };
 		4F2C7FA367EB9A58E6B86653 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A65BDC819D5F3F6610A05E1F /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -36,13 +36,13 @@
 		1F5BBAFA1B662E2B0019C20A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F5BBAFC1B662E2B0019C20A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F5BBAFF1B662E2B0019C20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F5BBB011B662E2B0019C20A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F5BBB041B662E2B0019C20A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1F5BBB0A1B662E2B0019C20A /* IMDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5BBB0F1B662E2B0019C20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5BBB101B662E2B0019C20A /* IMDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDemoTests.swift; sourceTree = "<group>"; };
 		1F5BBB1A1B66345F0019C20A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F5BBB1C1B6645990019C20A /* IMDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		1FE18DD71B7138CA002DEB35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IMDemo/Images.xcassets; sourceTree = "<group>"; };
 		1FED4F6E1B6B6A46003D0421 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
 		384E9CF9D0C6CBC981C1BF37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A65BDC819D5F3F6610A05E1F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +81,7 @@
 			children = (
 				1F5BBB1A1B66345F0019C20A /* Podfile */,
 				1F5BBAF71B662E2B0019C20A /* IMDemo */,
+				1FE18DD71B7138CA002DEB35 /* Images.xcassets */,
 				1F5BBB0D1B662E2B0019C20A /* IMDemoTests */,
 				1F5BBAF61B662E2B0019C20A /* Products */,
 				3ADC03DA601A9FB85B2E4526 /* Pods */,
@@ -106,7 +107,6 @@
 				1F5BBAFE1B662E2B0019C20A /* Main.storyboard */,
 				1FED4F6E1B6B6A46003D0421 /* ConversationListViewController.swift */,
 				1F525ECD1B679F61004BC4FF /* ConversationViewController.swift */,
-				1F5BBB011B662E2B0019C20A /* Images.xcassets */,
 				1F5BBB031B662E2B0019C20A /* LaunchScreen.xib */,
 				1F5BBAF81B662E2B0019C20A /* Supporting Files */,
 			);
@@ -230,9 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F5BBB001B662E2B0019C20A /* Main.storyboard in Resources */,
+				1FE18DD81B7138CA002DEB35 /* Images.xcassets in Resources */,
 				1F5BBB051B662E2B0019C20A /* LaunchScreen.xib in Resources */,
 				1F5BBB1B1B66345F0019C20A /* Podfile in Resources */,
-				1F5BBB021B662E2B0019C20A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,8 +402,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
         
         switch userId {
             
-        case "Spock" :
+          case "Spock" :
             
             userInfo.name = "CaptainSpock"
             userInfo.portraitUri = "http://photo.weibo.com/3053677927/photos/detail/photo_id/3870663101552727"
@@ -33,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
             
             userInfo.name = "Jim"
             userInfo.portraitUri = "http://photo.weibo.com/3053677927/photos/detail/photo_id/3870662807961020"
+            
+            
+            
             
         default:
             print("无此用户")
@@ -44,21 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
     }
         
     
-    
-    
-    
-    
-   
-    
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+    func connectServer(completion:()->Void){
         
-        //获取保存的token
-        let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("pwe86ga5el346")
-        as? String
+//        //获取保存的token
+//        let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("pwe86ga5el346")
+//            as? String
         
         //初始化appkey
         RCIM.sharedRCIM().initWithAppKey("pwe86ga5el346")
+        
         
         
         //设置用户信息提供者为自己 AppDelegate
@@ -68,7 +65,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
         
         //用Token测试连接
         RCIM.sharedRCIM().connectWithToken("dduW7igqiqgzwM72pYHtCPU61chM1C4dynSJnNAGXaDUQf1ZFZjAZDahviHgAbF6/7GIR/obbDqMSEjYI01+5Q==", success: { (_) -> Void in
-            print("连接成功！")
             
             
             let currentUser = RCUserInfo(userId: "Spock", name: "CaptainSpock", portrait: "http://photo.weibo.com/3053677927/photos/detail/photo_id/3870663101552727")
@@ -76,11 +72,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
             
             RCIM.sharedRCIM().currentUserInfo = currentUser
             
-        }, error: { (_) -> Void in
-            print("连接失败! ")
-        }) { () -> Void in
-            print("Token不正确或已经失效")
-        }
+            print(" 连接成功!")
+            
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+              completion()
+            
+            })
+            
+            
+            }, error: { (code:RCConnectErrorCode) -> Void in
+                print("无法连接! \(code)")
+                
+            }) { () -> Void in
+                print("无效Token")
+            }
+
+
+        
+    }
+    
+    
+    
+   
+    
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
+        
         
         
         
