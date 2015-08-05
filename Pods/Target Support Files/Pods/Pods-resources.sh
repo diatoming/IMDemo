@@ -62,12 +62,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/en.lproj"
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/zh-Hans.lproj"
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/Emoji.plist"
+  install_resource "${BUILT_PRODUCTS_DIR}/OAStackView.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/RongCloud.bundle"
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/en.lproj"
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/zh-Hans.lproj"
   install_resource "RongCloudIMKit/Rong_Cloud_iOS_SDK_v2_2_6_stable/Emoji.plist"
+  install_resource "${BUILT_PRODUCTS_DIR}/OAStackView.bundle"
 fi
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

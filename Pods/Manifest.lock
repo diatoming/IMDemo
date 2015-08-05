@@ -1,5 +1,6 @@
 PODS:
   - KxMenu (1)
+  - OAStackView (0.1.0)
   - pop (1.0.7)
   - PopMenu (2.4):
     - pop
@@ -9,11 +10,13 @@ PODS:
 
 DEPENDENCIES:
   - kxMenu
+  - OAStackView
   - PopMenu
   - RongCloudIMKit
 
 SPEC CHECKSUMS:
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
+  OAStackView: 76e64242351e2746374b9161a03021cbc19341ff
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   PopMenu: 26b97baeaf250070f4f61b93727ca86d127d7bc5
   RongCloudIMKit: 9008ad659b0c30d886719a72b9f02a525bc66fd3

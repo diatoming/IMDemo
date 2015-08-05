@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ABD784BB-D233-4519-A984-33322D8E1636</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IMDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5BA9F96376C04FF505813A1317848DC1B4AA9D80</key>
+		<string>https://github.com/kevinflash/IMDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IMDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5BA9F96376C04FF505813A1317848DC1B4AA9D80</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kevinflash/IMDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5BA9F96376C04FF505813A1317848DC1B4AA9D80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5BA9F96376C04FF505813A1317848DC1B4AA9D80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IMDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

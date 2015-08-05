@@ -6,6 +6,12 @@
 // project.
 
 
+// OAStackView
+#define COCOAPODS_POD_AVAILABLE_OAStackView
+#define COCOAPODS_VERSION_MAJOR_OAStackView 0
+#define COCOAPODS_VERSION_MINOR_OAStackView 1
+#define COCOAPODS_VERSION_PATCH_OAStackView 0
+
 // PopMenu
 #define COCOAPODS_POD_AVAILABLE_PopMenu
 #define COCOAPODS_VERSION_MAJOR_PopMenu 2
