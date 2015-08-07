@@ -1,4 +1,4 @@
 pod 'RongCloudIMKit'
 pod 'kxMenu'
 pod 'PopMenu'
-pod 'OAStackView'
+pod 'ComponentKit', '~> 0.12'
