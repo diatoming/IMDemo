@@ -8,5 +8,4 @@
 
 #import <PopMenu/PopMenu.h>
 
-#import <ComponentKit/ComponentKit.h>
 

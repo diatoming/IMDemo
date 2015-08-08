@@ -6,12 +6,6 @@
 // project.
 
 
-// ComponentKit
-#define COCOAPODS_POD_AVAILABLE_ComponentKit
-#define COCOAPODS_VERSION_MAJOR_ComponentKit 0
-#define COCOAPODS_VERSION_MINOR_ComponentKit 12
-#define COCOAPODS_VERSION_PATCH_ComponentKit 0
-
 // PopMenu
 #define COCOAPODS_POD_AVAILABLE_PopMenu
 #define COCOAPODS_VERSION_MAJOR_PopMenu 2

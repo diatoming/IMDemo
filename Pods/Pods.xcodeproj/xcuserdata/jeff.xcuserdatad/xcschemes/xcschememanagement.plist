@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-ComponentKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-KxMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02973649EB857E5A82813FF9</key>
+		<key>1D60D88818EE42712D1AA586</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>056645BE78F49FA30BD737DA</key>
+		<key>82225671BDB0AB7DB68F5116</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>58BC9AD9461A5CDBB71BD6C4</key>
+		<key>A59822901E613D30E27A1E50</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>68BAA4CCC4EDA41C3523165A</key>
+		<key>B25EA5C4E0E7AA793567E651</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AC05307AC30A22F8714ADB1E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CC8A7EBBC47AE3341C71C9A3</key>
+		<key>F4F1AF557EC4CCA815BBF496</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,5 +1,4 @@
 PODS:
-  - ComponentKit (0.12)
   - KxMenu (1)
   - pop (1.0.7)
   - PopMenu (2.4):
@@ -9,13 +8,11 @@ PODS:
   - XHRealTimeBlur (1.7)
 
 DEPENDENCIES:
-  - ComponentKit (~> 0.12)
   - kxMenu
   - PopMenu
   - RongCloudIMKit
 
 SPEC CHECKSUMS:
-  ComponentKit: 4bf3ce82a9e28f2ec26ba112102a2120ef312aa6
   KxMenu: c025365712f55fa99feb7830fbb7dea0e912be72
   pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
   PopMenu: 26b97baeaf250070f4f61b93727ca86d127d7bc5
