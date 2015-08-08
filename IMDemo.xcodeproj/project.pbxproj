@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1B88851B75EB410066E627 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B88841B75EB410066E627 /* LoginViewController.swift */; };
+		1F1B88871B75F2CA0066E627 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B88861B75F2CA0066E627 /* RoundImageView.swift */; };
 		1F525ECE1B679F61004BC4FF /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F525ECD1B679F61004BC4FF /* ConversationViewController.swift */; };
 		1F5BBAFB1B662E2B0019C20A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBAFA1B662E2B0019C20A /* AppDelegate.swift */; };
 		1F5BBAFD1B662E2B0019C20A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBAFC1B662E2B0019C20A /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1B88841B75EB410066E627 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1F1B88861B75F2CA0066E627 /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		1F525ECD1B679F61004BC4FF /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		1F5BBAF51B662E2B0019C20A /* IMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5BBAF91B662E2B0019C20A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		1F5BBAF71B662E2B0019C20A /* IMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1F1B88861B75F2CA0066E627 /* RoundImageView.swift */,
+				1F1B88841B75EB410066E627 /* LoginViewController.swift */,
 				1F5BBAFA1B662E2B0019C20A /* AppDelegate.swift */,
 				1F5BBAFC1B662E2B0019C20A /* ViewController.swift */,
 				1F5BBAFE1B662E2B0019C20A /* Main.storyboard */,
@@ -287,7 +293,9 @@
 				1F5BBAFD1B662E2B0019C20A /* ViewController.swift in Sources */,
 				1FED4F6F1B6B6A46003D0421 /* ConversationListViewController.swift in Sources */,
 				1F5BBAFB1B662E2B0019C20A /* AppDelegate.swift in Sources */,
+				1F1B88851B75EB410066E627 /* LoginViewController.swift in Sources */,
 				1F525ECE1B679F61004BC4FF /* ConversationViewController.swift in Sources */,
+				1F1B88871B75F2CA0066E627 /* RoundImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

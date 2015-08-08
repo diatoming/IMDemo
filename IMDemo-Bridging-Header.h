@@ -8,4 +8,6 @@
 
 #import <PopMenu/PopMenu.h>
 
+#import <JSAnimatedImagesView/JSAnimatedImagesView.h>
+
 
