@@ -25,15 +25,31 @@ import UIKit
 
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController,JSAnimatedImagesViewDataSource {
 
     @IBOutlet weak var loginStackView: UIStackView!
+    
+    
+    @IBOutlet weak var WallpaperImageView: JSAnimatedImagesView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.WallpaperImageView.dataSource = self
+        
+        
         // Do any additional setup after loading the view.
     }
 
+    func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
+        return 3
+    }
+    
+    
+    func animatedImagesView(animatedImagesView: JSAnimatedImagesView!, imageAtIndex index: UInt) -> UIImage! {
+        return UIImage(named: "image\(index + 1)")
+    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
     
