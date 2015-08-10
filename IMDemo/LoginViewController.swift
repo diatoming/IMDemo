@@ -8,22 +8,6 @@
 
 import UIKit
 
-//extension UIView{
-//   @IBInspectable var cornerRadius: CGFloat{
-//        get {
-//            return layer.cornerRadius
-//        }
-//        
-//        set{
-//            layer.cornerRadius = newValue
-//            layer.masksToBounds = (newValue > 0)
-//        }
-//    }
-//    
-//    
-//}
-
-
 
 class LoginViewController: UIViewController,JSAnimatedImagesViewDataSource {
 
@@ -38,9 +22,18 @@ class LoginViewController: UIViewController,JSAnimatedImagesViewDataSource {
         self.WallpaperImageView.dataSource = self
         
         
+        
         // Do any additional setup after loading the view.
     }
 
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
+
+    }
+    
+    
     func animatedImagesNumberOfImages(animatedImagesView: JSAnimatedImagesView!) -> UInt {
         return 3
     }

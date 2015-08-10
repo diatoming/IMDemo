@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5BA9F96376C04FF505813A1317848DC1B4AA9D80" : 0,
+    "BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "ABD784BB-D233-4519-A984-33322D8E1636",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5BA9F96376C04FF505813A1317848DC1B4AA9D80" : "IMDemo",
+    "BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B" : "IMDemo\/IMDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IMDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IMDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kevinflash\/IMDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5BA9F96376C04FF505813A1317848DC1B4AA9D80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kevinflash\/IMDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B"
+    }
+  ]
+}
