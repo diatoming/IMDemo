@@ -17,6 +17,9 @@
 		1F5BBB111B662E2B0019C20A /* IMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBB101B662E2B0019C20A /* IMDemoTests.swift */; };
 		1F5BBB1B1B66345F0019C20A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBB1A1B66345F0019C20A /* Podfile */; };
 		1F8734731B77B44500386E58 /* RegTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8734721B77B44500386E58 /* RegTableViewController.swift */; };
+		1F8734761B78737300386E58 /* UIView+ViewRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8734751B78737300386E58 /* UIView+ViewRecursion.m */; };
+		1F87347A1B7897C800386E58 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8734791B7897C800386E58 /* SwiftNotice.swift */; };
+		1F87347C1B789C4300386E58 /* UITextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F87347B1B789C4200386E58 /* UITextBox.swift */; };
 		1FE18DD81B7138CA002DEB35 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE18DD71B7138CA002DEB35 /* Images.xcassets */; };
 		1FED4F6F1B6B6A46003D0421 /* ConversationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED4F6E1B6B6A46003D0421 /* ConversationListViewController.swift */; };
 		4F2C7FA367EB9A58E6B86653 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A65BDC819D5F3F6610A05E1F /* libPods.a */; };
@@ -48,6 +51,10 @@
 		1F5BBB1A1B66345F0019C20A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F5BBB1C1B6645990019C20A /* IMDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		1F8734721B77B44500386E58 /* RegTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegTableViewController.swift; sourceTree = "<group>"; };
+		1F8734741B78737300386E58 /* UIView+ViewRecursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewRecursion.h"; sourceTree = "<group>"; };
+		1F8734751B78737300386E58 /* UIView+ViewRecursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewRecursion.m"; sourceTree = "<group>"; };
+		1F8734791B7897C800386E58 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		1F87347B1B789C4200386E58 /* UITextBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextBox.swift; sourceTree = "<group>"; };
 		1FE18DD71B7138CA002DEB35 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IMDemo/Images.xcassets; sourceTree = "<group>"; };
 		1FED4F6E1B6B6A46003D0421 /* ConversationListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationListViewController.swift; sourceTree = "<group>"; };
 		384E9CF9D0C6CBC981C1BF37 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +124,7 @@
 				1FED4F6E1B6B6A46003D0421 /* ConversationListViewController.swift */,
 				1F525ECD1B679F61004BC4FF /* ConversationViewController.swift */,
 				1F5BBB031B662E2B0019C20A /* LaunchScreen.xib */,
+				1F8734781B78741D00386E58 /* 3rd */,
 				1F5BBAF81B662E2B0019C20A /* Supporting Files */,
 			);
 			path = IMDemo;
@@ -145,6 +153,17 @@
 				1F5BBB0F1B662E2B0019C20A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F8734781B78741D00386E58 /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				1F87347B1B789C4200386E58 /* UITextBox.swift */,
+				1F8734791B7897C800386E58 /* SwiftNotice.swift */,
+				1F8734741B78737300386E58 /* UIView+ViewRecursion.h */,
+				1F8734751B78737300386E58 /* UIView+ViewRecursion.m */,
+			);
+			name = 3rd;
 			sourceTree = "<group>";
 		};
 		3ADC03DA601A9FB85B2E4526 /* Pods */ = {
@@ -293,11 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F87347C1B789C4300386E58 /* UITextBox.swift in Sources */,
 				1F5BBAFD1B662E2B0019C20A /* ViewController.swift in Sources */,
 				1FED4F6F1B6B6A46003D0421 /* ConversationListViewController.swift in Sources */,
+				1F8734761B78737300386E58 /* UIView+ViewRecursion.m in Sources */,
 				1F5BBAFB1B662E2B0019C20A /* AppDelegate.swift in Sources */,
 				1F1B88851B75EB410066E627 /* LoginViewController.swift in Sources */,
 				1F525ECE1B679F61004BC4FF /* ConversationViewController.swift in Sources */,
+				1F87347A1B7897C800386E58 /* SwiftNotice.swift in Sources */,
 				1F1B88871B75F2CA0066E627 /* RoundImageView.swift in Sources */,
 				1F8734731B77B44500386E58 /* RegTableViewController.swift in Sources */,
 			);
@@ -457,10 +479,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -477,10 +496,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = IMDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeff.$(PRODUCT_NAME:rfc1034identifier)";

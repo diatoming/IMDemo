@@ -13,22 +13,7 @@ class ConversationListViewController: RCConversationListViewController {
      let conVC = RCConversationViewController()
     
     @IBAction func ShowMenu(sender: UIBarButtonItem) {
-        
-//        var frame = sender.valueForKey("view")?.frame
-//        
-//        frame?.origin.y = (frame?.origin.y)! + 30
-//        
-//        
-//        let  menuItems = [
-//            
-//            KxMenuItem("客服",image:UIImage(named: "service"),target:self,action: "ClickMenu1"),
-//            
-//            KxMenuItem("好友",image:UIImage(named: "contacts"),target:self,action: "ClickMenu2"),
-//
-//             ]
-//            KxMenu.showMenuInView(self.view, fromRect: frame!, menuItems:menuItems)
-//        
-//        
+  
         
         let items = [
         

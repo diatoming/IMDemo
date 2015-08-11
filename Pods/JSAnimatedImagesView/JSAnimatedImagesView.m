@@ -257,8 +257,11 @@ static const CGFloat JSAnimatedImagesViewImageViewsBorderOffset = 10;
         return [self randomNumberBetweenNumber:maxNumber andNumber:minNumber];
     }
     
-    NSUInteger randomInt = (arc4random_uniform(maxNumber - minNumber + 1)) + minNumber;
-    
+    //    NSUInteger randomInt = (arc4random_uniform(maxNumber - minNumber + 1)) + minNumber;
+
+         NSUInteger randomInt = (arc4random_uniform(maxNumber - minNumber + 1)) + minNumber;
+
+
     return randomInt;
 }
 

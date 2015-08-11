@@ -10,25 +10,48 @@ import UIKit
 
 class RegTableViewController: UITableViewController {
 
+   
+    @IBOutlet var loginTextFields: [UITextField]!
     
     
     @IBOutlet weak var user: UITextField!
     
     @IBOutlet weak var password: UITextField!
     
-    @IBOutlet weak var mail: UIView!
+    @IBOutlet weak var mail: UITextField!
     
     @IBOutlet weak var region: UITextField!
     
-    @IBOutlet weak var question: UITableViewCell!
+    @IBOutlet weak var question: UITextField!
+    
+
     
     @IBOutlet weak var answer: UITextField!
     
     //必填项校验
     func checkRequireField(){
         
+
+      //必填项空判断
+        for textField in loginTextFields{
+            
+            if textField.text!.isEmpty{
+                self.errorNotice("必填项不能为空")
+            }
+        }
+        //邮箱合法性校验
+            let regex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+        
+            let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
+        
+        guard predicate.evaluateWithObject(mail.text) else{
+            self.errorNotice("邮箱格式错误")
+            return
+            
+        }
         
     }
+    
     
     
     
@@ -47,14 +70,13 @@ class RegTableViewController: UITableViewController {
     }
     
      func doneButtonTap(){
+          
+        checkRequireField()
         
-        let alert = UIAlertController(title: "提示", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-        
-        let action = UIAlertAction(title: "OK", style:UIAlertActionStyle.Default, handler: nil)
-        
-        alert.addAction(action)
-        self.presentViewController(alert, animated: true, completion: nil)
     }
+        
+    
+        
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

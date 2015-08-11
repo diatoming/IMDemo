@@ -44,7 +44,7 @@ typedef void (^clearHistory)(BOOL isSuccess);
 /**
  *  UIActionSheet
  */
-@property(nonatomic, readonly, strong) UIActionSheet *clearMsgHistoryActionSheet;
+//@property(nonatomic, readonly, strong) UIActionSheet *clearMsgHistoryActionSheet;
 
 /**
  *  clearHistoryMessage

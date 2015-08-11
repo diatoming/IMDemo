@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-KxMenu.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-MSWeakTimer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4085B0F2635E71414D5D7B2E</key>
+		<key>691311892ED0F95AA0639870</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>45F41AD1A7B11D3B3063C4A2</key>
+		<key>715CEA90794C60468F9DA7C6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F6FBFE5B8CBC87DC55C3382</key>
+		<key>77776851895DD8EB53BF08A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>69BB6340C6EC6BF46F48A072</key>
+		<key>9B4D9724D0E05D30C01415D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E3456AA29FF9B2EA040966C</key>
+		<key>E49D8F0CB9490F1903DF6849</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A77952A411C704812A7AD944</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C7A06295B6F11F999591FA44</key>
+		<key>E64ED38855AA48266D4FAD8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

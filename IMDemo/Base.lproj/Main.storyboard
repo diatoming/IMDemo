@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QXM-B1-LYi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ijv-5f-ChC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--最近会话-->
         <scene sceneID="cgk-na-aVL">
             <objects>
-                <viewController id="1qT-I4-osS" customClass="ConversationListViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myStoryboard4" id="1qT-I4-osS" customClass="ConversationListViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JC6-8T-1Qy"/>
                         <viewControllerLayoutGuide type="bottom" id="swo-fk-SyY"/>
@@ -35,7 +35,7 @@
         <!--客服-->
         <scene sceneID="O0I-sF-06O">
             <objects>
-                <viewController id="V07-wz-sgB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myStoryboard10" id="V07-wz-sgB" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OMM-pF-NHq"/>
                         <viewControllerLayoutGuide type="bottom" id="MYh-6c-G4e"/>
@@ -54,7 +54,7 @@
         <!--通讯录-->
         <scene sceneID="C7k-8i-osr">
             <objects>
-                <viewController id="x7N-NW-J57" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myStoryboard7" id="x7N-NW-J57" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SfO-EL-Z51"/>
                         <viewControllerLayoutGuide type="bottom" id="1Fk-65-eXm"/>
@@ -73,7 +73,7 @@
         <!--Login View Controller-->
         <scene sceneID="ear-3N-RBz">
             <objects>
-                <viewController id="HwA-J0-8vI" customClass="LoginViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myStoryboard2" id="HwA-J0-8vI" customClass="LoginViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OJ5-Ht-FhC"/>
                         <viewControllerLayoutGuide type="bottom" id="7sT-Jb-7FO"/>
@@ -131,19 +131,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="lul-S0-s1C">
                                 <rect key="frame" x="473" y="264" width="117" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="自动登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYu-MS-pwU">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自动登录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYu-MS-pwU">
+                                        <rect key="frame" x="0.0" y="10" width="68" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-FR-DRP">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXf-FR-DRP">
                                         <rect key="frame" x="68" y="0.0" width="51" height="31"/>
                                     </switch>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="jYu-MS-pwU" firstAttribute="height" secondItem="XXf-FR-DRP" secondAttribute="height" id="nnl-h3-VDP"/>
-                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="99i-d2-l6A">
                                 <rect key="frame" x="0.0" y="510" width="600" height="30"/>
@@ -222,7 +219,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="w7z-4B-HBD">
             <objects>
-                <tabBarController id="ijv-5f-ChC" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="myStoryboard8" id="ijv-5f-ChC" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="1rX-3H-Puk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -242,7 +239,7 @@
         <!--Reg Table View Controller-->
         <scene sceneID="nm7-hF-3g0">
             <objects>
-                <tableViewController id="IUh-cj-Rm3" customClass="RegTableViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="myStoryboard1" id="IUh-cj-Rm3" customClass="RegTableViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ggP-1Z-z28">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -257,7 +254,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-Qe-kOa">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="新用户名" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-Qe-kOa" userLabel="user" customClass="UITextBox" customModule="IMDemo" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="tCb-4I-tzh"/>
@@ -280,7 +277,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Fu-tZh">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V5X-Fu-tZh" userLabel="password" customClass="UITextBox" customModule="IMDemo" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="uGV-I1-I6K"/>
@@ -299,11 +296,11 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bBb-Pf-K1V">
                                         <rect key="frame" x="0.0" y="202" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bBb-Pf-K1V" id="e2Y-Oi-I3H">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bBb-Pf-K1V" id="e2Y-Oi-I3H" userLabel="mail">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNC-Vv-8K4">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WNC-Vv-8K4" customClass="UITextBox" customModule="IMDemo" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="ejD-nc-cnL"/>
@@ -330,7 +327,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所在地区" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWW-l2-fYN">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="所在地区" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWW-l2-fYN" customClass="UITextBox" customModule="IMDemo" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="dre-r6-dxb"/>
@@ -353,7 +350,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6UH-Dr-XuG">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码提示问题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6UH-Dr-XuG" customClass="UITextBox" customModule="IMDemo" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="9Fa-xI-Rlv"/>
@@ -376,7 +373,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码问题提示答案" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4e8-mD-kuH">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码问题提示答案" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4e8-mD-kuH" customClass="UITextBox" customModule="IMDemo" customModuleProvider="target">
                                                     <rect key="frame" x="30" y="7" width="540" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="HDs-RV-aXA"/>
@@ -403,11 +400,14 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="answer" destination="4e8-mD-kuH" id="SXC-g0-9Ni"/>
-                        <outlet property="mail" destination="e2Y-Oi-I3H" id="iqS-4Q-8v1"/>
+                        <outlet property="mail" destination="WNC-Vv-8K4" id="Tso-u8-YGR"/>
                         <outlet property="password" destination="V5X-Fu-tZh" id="r4F-Nm-wUA"/>
-                        <outlet property="question" destination="EPt-d1-QBO" id="PaJ-bo-H5f"/>
+                        <outlet property="question" destination="6UH-Dr-XuG" id="Ey5-sJ-awj"/>
                         <outlet property="region" destination="AWW-l2-fYN" id="fqJ-Lx-8qJ"/>
                         <outlet property="user" destination="Us4-Qe-kOa" id="NmD-8R-ycP"/>
+                        <outletCollection property="loginTextFields" destination="Us4-Qe-kOa" collectionClass="NSMutableArray" id="07E-YM-5We"/>
+                        <outletCollection property="loginTextFields" destination="WNC-Vv-8K4" collectionClass="NSMutableArray" id="EZ6-YL-rnS"/>
+                        <outletCollection property="loginTextFields" destination="V5X-Fu-tZh" collectionClass="NSMutableArray" id="BAl-KB-ATO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QO-Op-8as" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -417,7 +417,7 @@
         <!--关于-->
         <scene sceneID="A5D-sk-Xan">
             <objects>
-                <viewController id="L92-rg-NaY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myStoryboard12" id="L92-rg-NaY" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ufV-IG-w9P"/>
                         <viewControllerLayoutGuide type="bottom" id="VGL-Xg-X5J"/>
@@ -436,7 +436,7 @@
         <!--与好友对话中-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ConversationViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myStoryboard5" id="vXZ-lx-hvc" customClass="ConversationViewController" customModule="IMDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -455,7 +455,7 @@
         <!--会话-->
         <scene sceneID="H94-aX-ogD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VIW-A1-6qr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myStoryboard3" automaticallyAdjustsScrollViewInsets="NO" id="VIW-A1-6qr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="会话" image="coversation" id="dXy-RS-NoE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hgg-Fc-hFZ">
@@ -475,7 +475,7 @@
         <!--联系人-->
         <scene sceneID="Oqz-qJ-1g6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mSM-vO-WlJ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myStoryboard6" automaticallyAdjustsScrollViewInsets="NO" id="mSM-vO-WlJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="联系人" image="contacts" id="73S-ou-dL6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yBQ-ZO-s1P">
@@ -495,7 +495,7 @@
         <!--客服-->
         <scene sceneID="z27-6B-ueX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eFJ-tY-z0W" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myStoryboard9" automaticallyAdjustsScrollViewInsets="NO" id="eFJ-tY-z0W" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="客服" image="service" id="dvJ-2m-4Aj"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="erF-gI-4Fl">
@@ -515,7 +515,7 @@
         <!--关于-->
         <scene sceneID="PYy-Cm-Gb8">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CVF-hM-9a7" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myStoryboard11" automaticallyAdjustsScrollViewInsets="NO" id="CVF-hM-9a7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="关于" image="about" id="Qbj-0U-dEd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sie-Xl-nMb">
@@ -535,7 +535,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hPh-3S-pgC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QXM-B1-LYi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="myStoryboard0" automaticallyAdjustsScrollViewInsets="NO" id="QXM-B1-LYi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x3b-Cp-pU8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
