@@ -24,7 +24,7 @@ class ConversationViewController: RCConversationViewController {
 //        self.title = userName 
         
     //设置头像样式
-  //      self.setMessageAvatarStyle(._USER_AVATAR_CYCLE)
+//        self.setMessageAvatarStyle(._USER_AVATAR_CYCLE)
         
         
         

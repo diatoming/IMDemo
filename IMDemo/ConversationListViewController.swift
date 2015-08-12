@@ -144,20 +144,6 @@ class ConversationListViewController: RCConversationListViewController {
     }
     
      override func onSelectedTableRow(conversationModelType: RCConversationModelType, conversationModel model: RCConversationModel!, atIndexPath indexPath: NSIndexPath!) {
-       
-//      代码跳转到会话节目
-//        let conVC = RCConversationViewController()
-//        
-//         conVC.targetId = model.targetId
-//        conVC.userName = model.conversationTitle
-//        conVC.conversationType = RCConversationType.ConversationType_PRIVATE
-//        
-//        conVC.title = model.conversationTitle
-//        
-//        self.navigationController?.pushViewController(conVC, animated: true)
-//        self.tabBarController?.tabBar.hidden = true
-//        
-//
 
         
                  conVC.targetId = model.targetId

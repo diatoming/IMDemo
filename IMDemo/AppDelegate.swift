@@ -27,12 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
           case "Spock" :
             
             userInfo.name = "CaptainSpock"
-            userInfo.portraitUri = "http://photo.weibo.com/3053677927/photos/detail/photo_id/3870663101552727"
+            userInfo.portraitUri = "http://chuantu.biz/t2/11/1439401786x-1376440123.jpg"
             
         case "CaptainKirk" :
             
             userInfo.name = "Jim"
-            userInfo.portraitUri = "http://photo.weibo.com/3053677927/photos/detail/photo_id/3870662807961020"
+            userInfo.portraitUri = "http://chuantu.biz/t2/11/1439401700x-1376440123.png"
             
             
             
@@ -58,16 +58,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
         
         
         
-        //设置用户信息提供者为自己 AppDelegate
-        RCIM.sharedRCIM().userInfoDataSource = self
-        
-        
-        
         //用Token测试连接
         RCIM.sharedRCIM().connectWithToken("dduW7igqiqgzwM72pYHtCPU61chM1C4dynSJnNAGXaDUQf1ZFZjAZDahviHgAbF6/7GIR/obbDqMSEjYI01+5Q==", success: { (_) -> Void in
             
             
-            let currentUser = RCUserInfo(userId: "Spock", name: "CaptainSpock", portrait: "http://photo.weibo.com/3053677927/photos/detail/photo_id/3870663101552727")
+            let currentUser = RCUserInfo(userId: "Spock", name: "CaptainSpock", portrait: "http://chuantu.biz/t2/11/1439401786x-1376440123.jpg")
             
             
             RCIM.sharedRCIM().currentUserInfo = currentUser
@@ -100,6 +95,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
         
         
         
+        //设置用户信息提供者为自己 AppDelegate
+                RCIM.sharedRCIM().userInfoDataSource = self
+        
+
         
         
         return true
