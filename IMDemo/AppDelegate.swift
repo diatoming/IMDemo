@@ -48,11 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
         
     
     func connectServer(completion:()->Void){
-        
-//        //获取保存的token
-//        let deviceTokenCache = NSUserDefaults.standardUserDefaults().objectForKey("pwe86ga5el346")
-//            as? String
-        
+
         //初始化appkey
         RCIM.sharedRCIM().initWithAppKey("pwe86ga5el346")
         

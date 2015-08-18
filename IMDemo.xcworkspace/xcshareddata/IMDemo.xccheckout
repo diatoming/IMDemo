@@ -12,12 +12,16 @@
 	<dict>
 		<key>5BA9F96376C04FF505813A1317848DC1B4AA9D80</key>
 		<string>https://github.com/kevinflash/IMDemo.git</string>
+		<key>BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B</key>
+		<string>https://github.com/kevinflash/IMDemo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>IMDemo.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5BA9F96376C04FF505813A1317848DC1B4AA9D80</key>
+		<string>../../IMDemo</string>
+		<key>BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,9 +29,17 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5BA9F96376C04FF505813A1317848DC1B4AA9D80</string>
+	<string>BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BCCB3FD5F49CCB37D98E9F47B62F5E9A90897C5B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IMDemo</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

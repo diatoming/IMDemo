@@ -13,19 +13,15 @@ class ConversationViewController: RCConversationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 //        
-//        self.targetId = "Spock"
-//        
-//        self.userName = "CaptainSpock"
-//        
-//
-//        self.conversationType = .ConversationType_PRIVATE
-//        
-//        
-//        self.title = userName 
+        self.targetId = "Spock"
         
-    //设置头像样式
-//        self.setMessageAvatarStyle(._USER_AVATAR_CYCLE)
+        self.userName = "CaptainSpock"
         
+
+        self.conversationType = .ConversationType_PRIVATE
+        
+        
+        self.title = userName 
         
         
         // Do any additional setup after loading the view.
