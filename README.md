@@ -3,12 +3,12 @@ an iOS Instant Messaging client.
 
 client only, no server, I'm still working on it
 
-![image](http://photo.weibo.com/3053677927/photos/detail/photo_id/3878041658222783/album_id/3878041138104746)
+![image](http://i1.tietuku.com/d570a92d32ca29a9.png)
 
-![image](http://photo.weibo.com/3053677927/photos/detail/photo_id/3878041687351680/album_id/3878041138104746)
+![image](http://i1.tietuku.com/eac58c9d1440c3c3.png)
 
-![image](http://photo.weibo.com/3053677927/photos/detail/photo_id/3878041473667711/album_id/3878041138104746)
+![image](http://i1.tietuku.com/86f991109188914b.png)
 
-![image](http://photo.weibo.com/3053677927/photos/detail/photo_id/3878041515611979/album_id/3878041138104746)
+![image](http://i1.tietuku.com/a2ff6423c2206a2e.png)
 
-![image](http://photo.weibo.com/3053677927/photos/detail/photo_id/3878041515611979/album_id/3878041138104746#3878041486240582)
+![image](http://i1.tietuku.com/5790b00ef432f414.png)
