@@ -16,6 +16,7 @@
 		1F5BBB051B662E2B0019C20A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBB031B662E2B0019C20A /* LaunchScreen.xib */; };
 		1F5BBB111B662E2B0019C20A /* IMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BBB101B662E2B0019C20A /* IMDemoTests.swift */; };
 		1F5BBB1B1B66345F0019C20A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BBB1A1B66345F0019C20A /* Podfile */; };
+		1F5FB5741B8D95C800492407 /* Inputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5FB5731B8D95C800492407 /* Inputs.swift */; };
 		1F8734731B77B44500386E58 /* RegTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8734721B77B44500386E58 /* RegTableViewController.swift */; };
 		1F8734761B78737300386E58 /* UIView+ViewRecursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8734751B78737300386E58 /* UIView+ViewRecursion.m */; };
 		1F87347A1B7897C800386E58 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8734791B7897C800386E58 /* SwiftNotice.swift */; };
@@ -50,6 +51,7 @@
 		1F5BBB101B662E2B0019C20A /* IMDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMDemoTests.swift; sourceTree = "<group>"; };
 		1F5BBB1A1B66345F0019C20A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F5BBB1C1B6645990019C20A /* IMDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IMDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F5FB5731B8D95C800492407 /* Inputs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inputs.swift; sourceTree = "<group>"; };
 		1F8734721B77B44500386E58 /* RegTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegTableViewController.swift; sourceTree = "<group>"; };
 		1F8734741B78737300386E58 /* UIView+ViewRecursion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewRecursion.h"; sourceTree = "<group>"; };
 		1F8734751B78737300386E58 /* UIView+ViewRecursion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewRecursion.m"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				1F1B88861B75F2CA0066E627 /* RoundImageView.swift */,
 				1F1B88841B75EB410066E627 /* LoginViewController.swift */,
 				1F8734721B77B44500386E58 /* RegTableViewController.swift */,
+				1F5FB5731B8D95C800492407 /* Inputs.swift */,
 				1F5BBAFA1B662E2B0019C20A /* AppDelegate.swift */,
 				1F5BBAFC1B662E2B0019C20A /* ViewController.swift */,
 				1F5BBAFE1B662E2B0019C20A /* Main.storyboard */,
@@ -321,6 +324,7 @@
 				1F525ECE1B679F61004BC4FF /* ConversationViewController.swift in Sources */,
 				1F87347A1B7897C800386E58 /* SwiftNotice.swift in Sources */,
 				1F1B88871B75F2CA0066E627 /* RoundImageView.swift in Sources */,
+				1F5FB5741B8D95C800492407 /* Inputs.swift in Sources */,
 				1F8734731B77B44500386E58 /* RegTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

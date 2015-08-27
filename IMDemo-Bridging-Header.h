@@ -8,4 +8,7 @@
 
 #import <JSAnimatedImagesView/JSAnimatedImagesView.h>
 
+#import <AJWValidator/AJWValidator.h>
+
+#import <AVOSCloud/AVOSCloud.h>
 

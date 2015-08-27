@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-AJWValidator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-JSAnimatedImagesView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0572A6673C2C6E474475D6B3</key>
+		<key>072DCD65CE8D6924C89CD4AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2836AF1AE4A5E6012033D805</key>
+		<key>07829F69BAD3B1C5BF167AE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>599B9E9608B3E4339E2C3848</key>
+		<key>25C95F4B6A15A3579CA375BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80690EA8B294B47320A34BEC</key>
+		<key>3BAEFB6E1DB5A1075A524D00</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9466AAF3DE557AF7B6309CFD</key>
+		<key>460B79A23B74313FA74D0AB1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9573EA897D35E04B61F21BD3</key>
+		<key>8B6561DBB0A8DC3160C6E6F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4D03A59844F029651C1A898</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA005C4118813AFCDCB37670</key>
 		<dict>
 			<key>primary</key>
 			<true/>

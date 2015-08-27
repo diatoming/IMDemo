@@ -10,23 +10,30 @@ import UIKit
 
 class RegTableViewController: UITableViewController {
 
-   
+    
     @IBOutlet var loginTextFields: [UITextField]!
     
     
-    @IBOutlet weak var user: UITextField!
+    @IBOutlet weak var user: UITextBox!
     
-    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var password: UITextBox!
     
-    @IBOutlet weak var mail: UITextField!
+    @IBOutlet weak var mail: UITextBox!
     
-    @IBOutlet weak var region: UITextField!
+    @IBOutlet weak var region: UITextBox!
     
-    @IBOutlet weak var question: UITextField!
+    @IBOutlet weak var question: UITextBox!
     
 
     
     @IBOutlet weak var answer: UITextField!
+    
+    
+    var possibleInputs : Inputs = []
+    
+
+    var doneButton : UIBarButtonItem?
+
     
     //必填项校验
     func checkRequireField(){
@@ -67,12 +74,149 @@ class RegTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: "doneButtonTap")
+         self.navigationItem.rightBarButtonItem?.enabled = false
+        
+         doneButton = self.navigationItem.rightBarButtonItem
+        
+        let v1 = AJWValidator(type: .String)
+        v1.addValidationToEnsureMinimumLength(3, invalidMessage: "用户名至少3位")
+        v1.addValidationToEnsureMaximumLength(15, invalidMessage: "用户名最长15位")
+        self.user.ajw_attachValidator(v1)
+        
+        v1.validatorStateChangedHandler = { (newState: AJWValidatorState) -> Void in
+            switch newState {
+                
+            case .ValidationStateValid:
+                
+                 self.user.highlightState = UITextBoxHighlightState.Default
+                
+                self.possibleInputs.unionInPlace(Inputs.user)
+                
+            default:
+                let errorMsg = v1.errorMessages.first as? String
+                self.user.highlightState = UITextBoxHighlightState.Wrong(errorMsg!)
+                
+                self.possibleInputs.subtractInPlace(Inputs.user)
+                
+            }
+            
+            self.doneButton?.enabled = self.possibleInputs.isAllOK()
+        }
+        
+         let v2 = AJWValidator(type: .String)
+         v2.addValidationToEnsureMinimumLength(3, invalidMessage: "密码至少3位")
+         v2.addValidationToEnsureMaximumLength(15, invalidMessage: "密码最长15位")
+         self.password.ajw_attachValidator(v2)
+        
+        v2.validatorStateChangedHandler = { (newState: AJWValidatorState) -> Void in
+            
+            switch newState {
+                
+            case .ValidationStateValid:
+                
+                self.password.highlightState = UITextBoxHighlightState.Default
+                
+                self.possibleInputs.unionInPlace(Inputs.password)
+                
+            default:
+                let errorMsg = v2.errorMessages.first as? String
+                self.password.highlightState = UITextBoxHighlightState.Wrong(errorMsg!)
+                
+                self.possibleInputs.subtractInPlace(Inputs.password)
+                
+            }
+            
+            self.doneButton?.enabled = self.possibleInputs.isAllOK()
+
+            
+        }
+        
+        let v3 = AJWValidator(type: .String)
+        v3.addValidationToEnsureValidEmailWithInvalidMessage("Email格式不对")
+        self.mail.ajw_attachValidator(v3)
+        v3.validatorStateChangedHandler = { (newState: AJWValidatorState) -> Void in
+            
+            switch newState {
+                
+            case .ValidationStateValid:
+                
+                self.mail.highlightState = UITextBoxHighlightState.Default
+                
+                self.possibleInputs.unionInPlace(Inputs.mail)
+                
+            default:
+                let errorMsg = v3.errorMessages.first as? String
+                self.mail.highlightState = UITextBoxHighlightState.Wrong(errorMsg!)
+                
+                self.possibleInputs.subtractInPlace(Inputs.mail)
+                
+            }
+            
+            self.doneButton?.enabled = self.possibleInputs.isAllOK()
+            
+
+        
+        
+        
+        }
+
     }
     
+    //注册新用户
+    
+    
+    
      func doneButtonTap(){
-          
-        checkRequireField()
+    //显示一个载入提示
+    
+        self.pleaseWait()
         
+    //建立用户的 AVObject
+        let user = AVObject(className: "IMUser")
+    //把输入的文本框的值保存到对象中
+        
+        user["user"] = self.user.text
+        user["password"] = self.password.text
+        user["mail"] = self.mail.text
+        user["region"] = self.region.text
+        user["question"] = self .question.text
+        user["answer"] = self.answer.text
+
+
+  //查询用户名是否已经被注册
+        let query = AVQuery(className: "IMUser")
+        query.whereKey("user", equalTo: self.user.text)
+        
+    //执行查询
+        query.getFirstObjectInBackgroundWithBlock { (object, e) -> Void in
+            self.clearAllNotice()
+
+            //如果查询到相关用户
+            if object != nil {
+             self.errorNotice("用户名已被注册")
+             self.user.becomeFirstResponder()
+             self.doneButton?.enabled = false
+
+            } else {
+                
+            //用户注册
+                user.saveInBackgroundWithBlock ({ (succeed, error) -> Void in
+                    if succeed{
+                        
+                        self.successNotice("注册成功")
+                        self.navigationController?.popViewControllerAnimated(true)
+                        
+                    } else {
+                       print(error)
+                       
+                        
+                    }
+                })
+
+            
+            }
+        }
+
     }
         
     

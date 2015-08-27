@@ -96,6 +96,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCIMUserInfoDataSource{
         
 
         
+        //获得LeanCloud授权
+        
+        //如果使用美国站点，请加上这行代码 [AVOSCloud useAVCloudUS];
+
+
+        AVOSCloud.setApplicationId("gDPi4CyGWPMGTVWcm1TrTjaG", clientKey: "4B3q1SBheDgNosqa3CfLucQd")
+        
         
         return true
     }
