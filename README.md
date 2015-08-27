@@ -3,7 +3,7 @@ an iOS Instant Messaging client.
 
 client only, no server, I'm still working on it
 
-![image](http://i1.tietuku.com/d570a92d32ca29a9.png)
+![image](http://i3.tietuku.com/fb2fae2d64a59022.png)
 
 
 
