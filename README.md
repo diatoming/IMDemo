@@ -1,30 +1,41 @@
 # IMDemo
-an iOS Instant Messaging client.
 
-client only, no server, I'm still working on it
-
-![image](http://i3.tietuku.com/fb2fae2d64a59022.png)
+iOS 即时通讯客户端，已实现基本的通信功能，目前还未实现登录功能。
 
 
-
-
-![image](http://i1.tietuku.com/eac58c9d1440c3c3.png)
+主界面及会话列表
+![image](http://i3.tietuku.com/7ccc5fffce4fbc5b.png)
 
 
 
-
-![image](http://i1.tietuku.com/86f991109188914b.png)
-
-
+点击右上的按钮弹出的类似网易新闻的菜单
+![image](http://i3.tietuku.com/6682cb942a49e01b.png)
 
 
 
-![image](http://i1.tietuku.com/a2ff6423c2206a2e.png)
+会话
+![image](http://i3.tietuku.com/002110578ace3fab.png)
 
 
 
 
-![image](http://i1.tietuku.com/5790b00ef432f414.png)
+带有墙纸动画效果的登录页面
+![image](http://i3.tietuku.com/5e3b16c200ccdc92.png)
 
 
 
+基本的邮箱格式判断
+![image](http://i3.tietuku.com/e47f84e62e36f7b8.png)
+
+
+
+
+用户注册
+![image](http://i3.tietuku.com/3568c56e496d99ca.png)
+
+
+
+
+
+用户名重复检查
+![image](http://i3.tietuku.com/d7df49d0aaea2f29.png)
